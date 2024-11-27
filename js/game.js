@@ -56,7 +56,7 @@ const checkCards = () => {
       firstCard = '';
       secondCard = '';
 
-    }, 500);
+    }, 1500);
   }
 
 }
