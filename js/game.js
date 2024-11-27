@@ -112,9 +112,10 @@ const loadGame = () => {
 
 const startTimer = () => {
 
+  let currentTime = 0; // Inicializa o tempo em 0
   this.loop = setInterval(() => {
-    const currentTime = +timer.innerHTML;
-    timer.innerHTML = currentTime + 1;
+    currentTime += 1; // Incrementa o tempo
+    timer.innerHTML = currentTime < 10 ? `0${currentTime}` : currentTime; // Formata o tempo para dois dígitos
   }, 1000);
 
 }
